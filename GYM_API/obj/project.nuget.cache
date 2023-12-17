@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bdhmYjpvASISM2boCg48Jt4vDUrrQI3yJrrMTTLBRGWNQ615Tv0ccqokm3gdskxInjuwakTFmUP9ChQTc1o1yQ==",
+  "dgSpecHash": "2AsDlrpTG1VN+jucayTcJPmPpyrlgPeL0boyEnfGjB9A8dM3OfCnL/6hVEz8fGggU4OHM+A167zmhIMz7cZBkA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Luketruke\\Desktop\\GYM_API\\GYM_API\\GYM.Api.csproj",
+  "projectFilePath": "C:\\Users\\Luketruke\\Desktop\\GYM_API_REST\\GYM_API_REST\\GYM_API\\GYM.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Luketruke\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Luketruke\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

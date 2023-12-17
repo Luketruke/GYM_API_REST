@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JUkpyeEa69v+AhpEPrMrzGCpmhf3q27Xfbyt4ti/+RYJZ4xEQP2s0Q72TeDPUwHfBaQXNDz/GsgzWBPVjlqWJg==",
+  "dgSpecHash": "a6UDR9iK7xNDP4ZcW4OjOo/3YvptG7fsDdzQFgXN585EiGTagvv9UiRejqK8qfi4dH3RXaRpLtjX8THzRSYWVA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Luketruke\\Desktop\\GYM_API\\GYM.IntegrationTests\\GYM.IntegrationTests.csproj",
+  "projectFilePath": "C:\\Users\\Luketruke\\Desktop\\GYM_API_REST\\GYM_API_REST\\GYM.IntegrationTests\\GYM.IntegrationTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Luketruke\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
     "C:\\Users\\Luketruke\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

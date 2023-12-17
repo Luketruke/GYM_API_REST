@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pUzYNCdGrRTEqYrNf0aiCFZmRL5FmFNTiQCrU2XcIPLvk3n4/XJJZ2FVvHJ1i9aohw+9bn7lZ0ijgb5t/el0Tg==",
+  "dgSpecHash": "E2xgD53oLhBvSu2nuh1lrQZdSG5OJMHPgbz6+R8HysTTfyiQc7pPhG7K/oPVrXOZ+X81A6jj2OXbFwQLWqOMEw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Luketruke\\Desktop\\GYM_API\\GYM.Core\\GYM.Core.csproj",
+  "projectFilePath": "C:\\Users\\Luketruke\\Desktop\\GYM_API_REST\\GYM_API_REST\\GYM.Core\\GYM.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Luketruke\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Luketruke\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.13\\microsoft.entityframeworkcore.7.0.13.nupkg.sha512",

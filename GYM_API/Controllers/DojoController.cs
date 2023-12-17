@@ -36,7 +36,6 @@ namespace GYM.Api.Controllers
         [HttpGet(Name = nameof(GetAll))]
         [ProducesResponseType((int)HttpStatusCode.OK, Type = typeof(ApiResponse<IEnumerable<DojoDto>>))]
         [ProducesResponseType((int)HttpStatusCode.BadRequest)]
-
         public IActionResult GetAll([FromQuery] DojoQueryFIlter filters)
         {
             var dojos = _dojoService.GetDojos(filters);
@@ -59,10 +58,15 @@ namespace GYM.Api.Controllers
                 meta = metadata
             };
 
+            // Add the "x-pagination" header to the response
             Response.Headers.Add("X-Pagination", JsonConvert.SerializeObject(metadata));
+
+            // Allow the browser to expose the "X-Pagination" header
+            Response.Headers.Add("Access-Control-Expose-Headers", "X-Pagination");
 
             return Ok(response);
         }
+
 
         /// <summary>
         /// Get Dojo

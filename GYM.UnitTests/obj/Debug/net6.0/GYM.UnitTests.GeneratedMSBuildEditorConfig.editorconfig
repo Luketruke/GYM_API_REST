@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = GYM.UnitTests
-build_property.ProjectDir = C:\Users\Luketruke\Desktop\GYM_API\GYM.UnitTests\
+build_property.ProjectDir = C:\Users\Luketruke\Desktop\GYM_API_REST\GYM_API_REST\GYM.UnitTests\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

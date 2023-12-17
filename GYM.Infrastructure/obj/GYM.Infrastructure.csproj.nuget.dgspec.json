@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Luketruke\\Desktop\\GYM_API\\GYM.Infrastructure\\GYM.Infrastructure.csproj": {}
+    "C:\\Users\\Luketruke\\Desktop\\GYM_API_REST\\GYM_API_REST\\GYM.Infrastructure\\GYM.Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Luketruke\\Desktop\\GYM_API\\GYM.Core\\GYM.Core.csproj": {
+    "C:\\Users\\Luketruke\\Desktop\\GYM_API_REST\\GYM_API_REST\\GYM.Core\\GYM.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Luketruke\\Desktop\\GYM_API\\GYM.Core\\GYM.Core.csproj",
+        "projectUniqueName": "C:\\Users\\Luketruke\\Desktop\\GYM_API_REST\\GYM_API_REST\\GYM.Core\\GYM.Core.csproj",
         "projectName": "GYM.Core",
-        "projectPath": "C:\\Users\\Luketruke\\Desktop\\GYM_API\\GYM.Core\\GYM.Core.csproj",
+        "projectPath": "C:\\Users\\Luketruke\\Desktop\\GYM_API_REST\\GYM_API_REST\\GYM.Core\\GYM.Core.csproj",
         "packagesPath": "C:\\Users\\Luketruke\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Luketruke\\Desktop\\GYM_API\\GYM.Core\\obj\\",
+        "outputPath": "C:\\Users\\Luketruke\\Desktop\\GYM_API_REST\\GYM_API_REST\\GYM.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -79,14 +79,14 @@
         }
       }
     },
-    "C:\\Users\\Luketruke\\Desktop\\GYM_API\\GYM.Infrastructure\\GYM.Infrastructure.csproj": {
+    "C:\\Users\\Luketruke\\Desktop\\GYM_API_REST\\GYM_API_REST\\GYM.Infrastructure\\GYM.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Luketruke\\Desktop\\GYM_API\\GYM.Infrastructure\\GYM.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\Luketruke\\Desktop\\GYM_API_REST\\GYM_API_REST\\GYM.Infrastructure\\GYM.Infrastructure.csproj",
         "projectName": "GYM.Infrastructure",
-        "projectPath": "C:\\Users\\Luketruke\\Desktop\\GYM_API\\GYM.Infrastructure\\GYM.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\Luketruke\\Desktop\\GYM_API_REST\\GYM_API_REST\\GYM.Infrastructure\\GYM.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\Luketruke\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Luketruke\\Desktop\\GYM_API\\GYM.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\Luketruke\\Desktop\\GYM_API_REST\\GYM_API_REST\\GYM.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -107,8 +107,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Luketruke\\Desktop\\GYM_API\\GYM.Core\\GYM.Core.csproj": {
-                "projectPath": "C:\\Users\\Luketruke\\Desktop\\GYM_API\\GYM.Core\\GYM.Core.csproj"
+              "C:\\Users\\Luketruke\\Desktop\\GYM_API_REST\\GYM_API_REST\\GYM.Core\\GYM.Core.csproj": {
+                "projectPath": "C:\\Users\\Luketruke\\Desktop\\GYM_API_REST\\GYM_API_REST\\GYM.Core\\GYM.Core.csproj"
               }
             }
           }

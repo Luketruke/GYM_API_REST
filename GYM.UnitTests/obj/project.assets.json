@@ -7173,11 +7173,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Luketruke\\Desktop\\GYM_API\\GYM.UnitTests\\GYM.UnitTests.csproj",
+      "projectUniqueName": "C:\\Users\\Luketruke\\Desktop\\GYM_API_REST\\GYM_API_REST\\GYM.UnitTests\\GYM.UnitTests.csproj",
       "projectName": "GYM.UnitTests",
-      "projectPath": "C:\\Users\\Luketruke\\Desktop\\GYM_API\\GYM.UnitTests\\GYM.UnitTests.csproj",
+      "projectPath": "C:\\Users\\Luketruke\\Desktop\\GYM_API_REST\\GYM_API_REST\\GYM.UnitTests\\GYM.UnitTests.csproj",
       "packagesPath": "C:\\Users\\Luketruke\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Luketruke\\Desktop\\GYM_API\\GYM.UnitTests\\obj\\",
+      "outputPath": "C:\\Users\\Luketruke\\Desktop\\GYM_API_REST\\GYM_API_REST\\GYM.UnitTests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

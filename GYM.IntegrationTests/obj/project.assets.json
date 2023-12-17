@@ -7173,11 +7173,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Luketruke\\Desktop\\GYM_API\\GYM.IntegrationTests\\GYM.IntegrationTests.csproj",
+      "projectUniqueName": "C:\\Users\\Luketruke\\Desktop\\GYM_API_REST\\GYM_API_REST\\GYM.IntegrationTests\\GYM.IntegrationTests.csproj",
       "projectName": "GYM.IntegrationTests",
-      "projectPath": "C:\\Users\\Luketruke\\Desktop\\GYM_API\\GYM.IntegrationTests\\GYM.IntegrationTests.csproj",
+      "projectPath": "C:\\Users\\Luketruke\\Desktop\\GYM_API_REST\\GYM_API_REST\\GYM.IntegrationTests\\GYM.IntegrationTests.csproj",
       "packagesPath": "C:\\Users\\Luketruke\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Luketruke\\Desktop\\GYM_API\\GYM.IntegrationTests\\obj\\",
+      "outputPath": "C:\\Users\\Luketruke\\Desktop\\GYM_API_REST\\GYM_API_REST\\GYM.IntegrationTests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
