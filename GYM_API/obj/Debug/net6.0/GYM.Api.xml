@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GYM.Api</name>
+    </assembly>
+    <members>
+        <member name="M:GYM.Api.Controllers.AddressController.GetProvinces">
+            <summary>
+            Get All Provinces
+            </summary>
+            <param name="filters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GYM.Api.Controllers.AddressController.GetLocalities">
+            <summary>
+            Get All Localities
+            </summary>
+            <param name="filters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GYM.Api.Controllers.AddressController.GetProvinceById(System.Int32)">
+            <summary>
+            Get Province By Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GYM.Api.Controllers.AddressController.GetLocalityById(System.Int32)">
+            <summary>
+            Get Locality By Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GYM.Api.Controllers.DojoController.GetAll(GYM.Core.QueryFilters.DojoQueryFIlter)">
+            <summary>
+            Get Dojos
+            </summary>
+            <param name="filters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GYM.Api.Controllers.DojoController.GetById(System.Int32)">
+            <summary>
+            Get Dojo
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GYM.Api.Controllers.DojoController.Insert(GYM.Core.DTOs.DojoDto)">
+            <summary>
+            InsertDojo
+            </summary>
+            <param name="dojoDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GYM.Api.Controllers.LoginController.Register(GYM.Core.DTOs.SecurityDto)">
+            <summary>
+            Register your user
+            </summary>
+            <param name="securityDto"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

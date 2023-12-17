@@ -1,0 +1,14 @@
+C:\Users\Luketruke\Desktop\GYM_API\GYM.Core\bin\Debug\net6.0\GYM.Core.deps.json
+C:\Users\Luketruke\Desktop\GYM_API\GYM.Core\bin\Debug\net6.0\GYM.Core.runtimeconfig.json
+C:\Users\Luketruke\Desktop\GYM_API\GYM.Core\bin\Debug\net6.0\GYM.Core.dll
+C:\Users\Luketruke\Desktop\GYM_API\GYM.Core\bin\Debug\net6.0\GYM.Core.pdb
+C:\Users\Luketruke\Desktop\GYM_API\GYM.Core\obj\Debug\net6.0\GYM.Core.csproj.AssemblyReference.cache
+C:\Users\Luketruke\Desktop\GYM_API\GYM.Core\obj\Debug\net6.0\GYM.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Luketruke\Desktop\GYM_API\GYM.Core\obj\Debug\net6.0\GYM.Core.AssemblyInfoInputs.cache
+C:\Users\Luketruke\Desktop\GYM_API\GYM.Core\obj\Debug\net6.0\GYM.Core.AssemblyInfo.cs
+C:\Users\Luketruke\Desktop\GYM_API\GYM.Core\obj\Debug\net6.0\GYM.Core.csproj.CoreCompileInputs.cache
+C:\Users\Luketruke\Desktop\GYM_API\GYM.Core\obj\Debug\net6.0\GYM.Core.dll
+C:\Users\Luketruke\Desktop\GYM_API\GYM.Core\obj\Debug\net6.0\refint\GYM.Core.dll
+C:\Users\Luketruke\Desktop\GYM_API\GYM.Core\obj\Debug\net6.0\GYM.Core.pdb
+C:\Users\Luketruke\Desktop\GYM_API\GYM.Core\obj\Debug\net6.0\GYM.Core.genruntimeconfig.cache
+C:\Users\Luketruke\Desktop\GYM_API\GYM.Core\obj\Debug\net6.0\ref\GYM.Core.dll
