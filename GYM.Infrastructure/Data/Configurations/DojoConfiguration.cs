@@ -36,6 +36,17 @@ namespace GYM.Infrastructure.Data.Configurations
                 .HasMaxLength(255)
                 .IsUnicode(false);
 
+            builder.HasOne(d => d.Locality)
+                .WithMany(l => l.Dojos)
+                .HasForeignKey(d => d.LocalityId)
+                .HasConstraintName("FK_Dojo_Locality");
+
+            // Configuración de la relación con Province
+            builder.HasOne(d => d.Province)
+                .WithMany(p => p.Dojos)
+                .HasForeignKey(d => d.ProvinceId)
+                .HasConstraintName("FK_Dojo_Province");
+
             builder.Property(e => e.Status);
         }
     }

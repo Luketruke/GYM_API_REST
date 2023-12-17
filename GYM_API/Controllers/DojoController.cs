@@ -39,7 +39,15 @@ namespace GYM.Api.Controllers
         public IActionResult GetAll([FromQuery] DojoQueryFIlter filters)
         {
             var dojos = _dojoService.GetDojos(filters);
+
+            // Imprime las propiedades para verificar
+            foreach (var dojo in dojos)
+            {
+                Console.WriteLine($"Dojo: {dojo.Name}, Locality: {dojo.Locality?.Description}, Province: {dojo.Province?.Description}");
+            }
+
             var dojosDtos = _mapper.Map<IEnumerable<DojoDto>>(dojos);
+
 
             var metadata = new Metadata
             {
@@ -66,7 +74,6 @@ namespace GYM.Api.Controllers
 
             return Ok(response);
         }
-
 
         /// <summary>
         /// Get Dojo
