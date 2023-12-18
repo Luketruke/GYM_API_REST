@@ -2,9 +2,6 @@
 using GYM.Core.Interfaces;
 using GYM.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace GYM.Infrastructure.Repositories
 {
@@ -15,7 +12,7 @@ namespace GYM.Infrastructure.Repositories
         public async Task<IEnumerable<Dojo>> GetDojoByName(string name)
         {
             var result = await _entities
-                .Where(x => x.Name == name)
+                .Where(x => x.Name == name && x.Status == 1)
                 .ToListAsync();
 
             return result;
@@ -25,7 +22,8 @@ namespace GYM.Infrastructure.Repositories
             var result = _entities
         .Include(x => x.Locality)
         .Include(x => x.Province)
-        .AsEnumerable();
+        .AsEnumerable()
+        .Where(x => x.Status == 1);
 
             return result;
         }

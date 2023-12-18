@@ -13,6 +13,7 @@ namespace GYM.Core.Interfaces
         Task<T> GetById(int id);
         Task Add(T entity);
         void Update(T entity);
-        Task Delete(int id);
+        Task PhysicalDelete(int id);
+        Task LogicalDelete(int id);
     }
 }

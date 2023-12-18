@@ -73,7 +73,7 @@ namespace GYM.Core.Services
         //}
         public async Task<bool> DeleteDojo(int id)
         {
-            await _unitOfWork.DojoRepository.Delete(id);
+            await _unitOfWork.DojoRepository.LogicalDelete(id);
             await _unitOfWork.SaveChangesAsync();
             return true;
         }

@@ -32,10 +32,19 @@ namespace GYM.Infrastructure.Repositories
         {
             _entities.Update(entity);
         }
-        public async Task Delete(int id)
+        public async Task PhysicalDelete(int id)
         {
             T entityToDelete = await GetById(id);
             _entities.Remove(entityToDelete);
+        }
+        public async Task LogicalDelete(int id)
+        {
+            T entityToUpdate = await GetById(id);
+
+            if (entityToUpdate != null)
+            {
+                typeof(T).GetProperty("Status").SetValue(entityToUpdate, 0);
+            }
         }
     }
 }

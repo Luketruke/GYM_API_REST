@@ -53,6 +53,21 @@
             <param name="dojoDto"></param>
             <returns></returns>
         </member>
+        <member name="M:GYM.Api.Controllers.DojoController.Update(System.Int32,GYM.Core.DTOs.DojoDto)">
+            <summary>
+            Update
+            </summary>
+            <param name="id"></param>
+            <param name="dojoDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GYM.Api.Controllers.DojoController.Delete(System.Int32)">
+            <summary>
+            Logical Delete 
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
         <member name="M:GYM.Api.Controllers.LoginController.Register(GYM.Core.DTOs.SecurityDto)">
             <summary>
             Register your user

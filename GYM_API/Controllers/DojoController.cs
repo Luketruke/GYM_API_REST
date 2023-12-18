@@ -39,15 +39,7 @@ namespace GYM.Api.Controllers
         public IActionResult GetAll([FromQuery] DojoQueryFIlter filters)
         {
             var dojos = _dojoService.GetDojos(filters);
-
-            // Imprime las propiedades para verificar
-            foreach (var dojo in dojos)
-            {
-                Console.WriteLine($"Dojo: {dojo.Name}, Locality: {dojo.Locality?.Description}, Province: {dojo.Province?.Description}");
-            }
-
             var dojosDtos = _mapper.Map<IEnumerable<DojoDto>>(dojos);
-
 
             var metadata = new Metadata
             {
@@ -107,6 +99,12 @@ namespace GYM.Api.Controllers
             return Ok(response);
         }
 
+        /// <summary>
+        /// Update
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="dojoDto"></param>
+        /// <returns></returns>
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id, DojoDto dojoDto)
         {
@@ -126,6 +124,11 @@ namespace GYM.Api.Controllers
             }
         }
 
+        /// <summary>
+        /// Logical Delete 
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
