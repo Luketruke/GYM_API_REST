@@ -16,15 +16,16 @@ namespace GYM.Infrastructure.Repositories
         {
             var result = await _entities
                 .Where(x => x.Name == name)
-                .Include(x => x.Locality)
-                .Include(x => x.Province)
                 .ToListAsync();
 
-            // Imprime las propiedades para verificar
-            foreach (var dojo in result)
-            {
-                Console.WriteLine($"Dojo: {dojo.Name}, Locality: {dojo.Locality?.Description}, Province: {dojo.Province?.Description}");
-            }
+            return result;
+        }
+        public IEnumerable<Dojo> GetAllDojos()
+        {
+            var result = _entities
+        .Include(x => x.Locality)
+        .Include(x => x.Province)
+        .AsEnumerable();
 
             return result;
         }

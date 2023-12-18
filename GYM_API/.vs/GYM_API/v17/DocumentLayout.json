@@ -3,26 +3,42 @@
   "WorkspaceRootPath": "C:\\Users\\Luketruke\\Desktop\\GYM_API_REST\\GYM_API_REST\\GYM_API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{94A45C87-A2E8-46F0-8194-0718C0255F41}|GYM.Api.csproj|c:\\users\\luketruke\\desktop\\gym_api_rest\\gym_api_rest\\gym_api\\controllers\\dojocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94A45C87-A2E8-46F0-8194-0718C0255F41}|GYM.Api.csproj|solutionrelative:controllers\\dojocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DFC4EE20-F0D6-487F-AF5E-C87E2F179744}|..\\GYM.Core\\GYM.Core.csproj|c:\\users\\luketruke\\desktop\\gym_api_rest\\gym_api_rest\\gym.core\\services\\dojoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{71C8AEEC-64BB-46AC-B9C4-D2E138EC4EFD}|..\\GYM.Infrastructure\\GYM.Infrastructure.csproj|c:\\users\\luketruke\\desktop\\gym_api_rest\\gym_api_rest\\gym.infrastructure\\data\\configurations\\dojoconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{71C8AEEC-64BB-46AC-B9C4-D2E138EC4EFD}|..\\GYM.Infrastructure\\GYM.Infrastructure.csproj|c:\\users\\luketruke\\desktop\\gym_api_rest\\gym_api_rest\\gym.infrastructure\\repositories\\dojorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{71C8AEEC-64BB-46AC-B9C4-D2E138EC4EFD}|..\\GYM.Infrastructure\\GYM.Infrastructure.csproj|c:\\users\\luketruke\\desktop\\gym_api_rest\\gym_api_rest\\gym.infrastructure\\mappings\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DFC4EE20-F0D6-487F-AF5E-C87E2F179744}|..\\GYM.Core\\GYM.Core.csproj|c:\\users\\luketruke\\desktop\\gym_api_rest\\gym_api_rest\\gym.core\\entities\\dojo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{71C8AEEC-64BB-46AC-B9C4-D2E138EC4EFD}|..\\GYM.Infrastructure\\GYM.Infrastructure.csproj|c:\\users\\luketruke\\desktop\\gym_api_rest\\gym_api_rest\\gym.infrastructure\\mappings\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DFC4EE20-F0D6-487F-AF5E-C87E2F179744}|..\\GYM.Core\\GYM.Core.csproj|c:\\users\\luketruke\\desktop\\gym_api_rest\\gym_api_rest\\gym.core\\dtos\\dojodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DFC4EE20-F0D6-487F-AF5E-C87E2F179744}|..\\GYM.Core\\GYM.Core.csproj|c:\\users\\luketruke\\desktop\\gym_api_rest\\gym_api_rest\\gym.core\\dtos\\dojodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{94A45C87-A2E8-46F0-8194-0718C0255F41}|GYM.Api.csproj|c:\\users\\luketruke\\desktop\\gym_api_rest\\gym_api_rest\\gym_api\\controllers\\dojocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94A45C87-A2E8-46F0-8194-0718C0255F41}|GYM.Api.csproj|solutionrelative:controllers\\dojocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DFC4EE20-F0D6-487F-AF5E-C87E2F179744}|..\\GYM.Core\\GYM.Core.csproj|c:\\users\\luketruke\\desktop\\gym_api_rest\\gym_api_rest\\gym.core\\interfaces\\idojorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DFC4EE20-F0D6-487F-AF5E-C87E2F179744}|..\\GYM.Core\\GYM.Core.csproj|c:\\users\\luketruke\\desktop\\gym_api_rest\\gym_api_rest\\gym.core\\interfaces\\idojoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71C8AEEC-64BB-46AC-B9C4-D2E138EC4EFD}|..\\GYM.Infrastructure\\GYM.Infrastructure.csproj|c:\\users\\luketruke\\desktop\\gym_api_rest\\gym_api_rest\\gym.infrastructure\\repositories\\dojorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DFC4EE20-F0D6-487F-AF5E-C87E2F179744}|..\\GYM.Core\\GYM.Core.csproj|c:\\users\\luketruke\\desktop\\gym_api_rest\\gym_api_rest\\gym.core\\services\\dojoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94A45C87-A2E8-46F0-8194-0718C0255F41}|GYM.Api.csproj|c:\\users\\luketruke\\desktop\\gym_api_rest\\gym_api_rest\\gym_api\\controllers\\addresscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94A45C87-A2E8-46F0-8194-0718C0255F41}|GYM.Api.csproj|solutionrelative:controllers\\addresscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71C8AEEC-64BB-46AC-B9C4-D2E138EC4EFD}|..\\GYM.Infrastructure\\GYM.Infrastructure.csproj|c:\\users\\luketruke\\desktop\\gym_api_rest\\gym_api_rest\\gym.infrastructure\\data\\configurations\\dojoconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DFC4EE20-F0D6-487F-AF5E-C87E2F179744}|..\\GYM.Core\\GYM.Core.csproj|c:\\users\\luketruke\\desktop\\gym_api_rest\\gym_api_rest\\gym.core\\services\\addressservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71C8AEEC-64BB-46AC-B9C4-D2E138EC4EFD}|..\\GYM.Infrastructure\\GYM.Infrastructure.csproj|c:\\users\\luketruke\\desktop\\gym_api_rest\\gym_api_rest\\gym.infrastructure\\repositories\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -32,11 +48,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
+              "Title": "IDojoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Luketruke\\Desktop\\GYM_API_REST\\GYM_API_REST\\GYM.Core\\Interfaces\\IDojoRepository.cs",
+              "RelativeDocumentMoniker": "..\\GYM.Core\\Interfaces\\IDojoRepository.cs",
+              "ToolTip": "C:\\Users\\Luketruke\\Desktop\\GYM_API_REST\\GYM_API_REST\\GYM.Core\\Interfaces\\IDojoRepository.cs",
+              "RelativeToolTip": "..\\GYM.Core\\Interfaces\\IDojoRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-18T00:09:57.067Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AddressController.cs",
+              "DocumentMoniker": "C:\\Users\\Luketruke\\Desktop\\GYM_API_REST\\GYM_API_REST\\GYM_API\\Controllers\\AddressController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AddressController.cs",
+              "ToolTip": "C:\\Users\\Luketruke\\Desktop\\GYM_API_REST\\GYM_API_REST\\GYM_API\\Controllers\\AddressController.cs",
+              "RelativeToolTip": "Controllers\\AddressController.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAswBoAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-17T23:57:54.256Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "DojoConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\Luketruke\\Desktop\\GYM_API_REST\\GYM_API_REST\\GYM.Infrastructure\\Data\\Configurations\\DojoConfiguration.cs",
               "RelativeDocumentMoniker": "..\\GYM.Infrastructure\\Data\\Configurations\\DojoConfiguration.cs",
@@ -49,80 +91,119 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "DojoRepository.cs",
               "DocumentMoniker": "C:\\Users\\Luketruke\\Desktop\\GYM_API_REST\\GYM_API_REST\\GYM.Infrastructure\\Repositories\\DojoRepository.cs",
               "RelativeDocumentMoniker": "..\\GYM.Infrastructure\\Repositories\\DojoRepository.cs",
               "ToolTip": "C:\\Users\\Luketruke\\Desktop\\GYM_API_REST\\GYM_API_REST\\GYM.Infrastructure\\Repositories\\DojoRepository.cs",
               "RelativeToolTip": "..\\GYM.Infrastructure\\Repositories\\DojoRepository.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAA2wB0AAAAJAAAA",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAgwBUAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2023-12-17T21:38:33.527Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "AutomapperProfile.cs",
               "DocumentMoniker": "C:\\Users\\Luketruke\\Desktop\\GYM_API_REST\\GYM_API_REST\\GYM.Infrastructure\\Mappings\\AutomapperProfile.cs",
               "RelativeDocumentMoniker": "..\\GYM.Infrastructure\\Mappings\\AutomapperProfile.cs",
               "ToolTip": "C:\\Users\\Luketruke\\Desktop\\GYM_API_REST\\GYM_API_REST\\GYM.Infrastructure\\Mappings\\AutomapperProfile.cs",
               "RelativeToolTip": "..\\GYM.Infrastructure\\Mappings\\AutomapperProfile.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAwwB8AAAAAAAAA",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAywA4AAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2023-12-17T21:36:15.867Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Dojo.cs",
               "DocumentMoniker": "C:\\Users\\Luketruke\\Desktop\\GYM_API_REST\\GYM_API_REST\\GYM.Core\\Entities\\Dojo.cs",
               "RelativeDocumentMoniker": "..\\GYM.Core\\Entities\\Dojo.cs",
               "ToolTip": "C:\\Users\\Luketruke\\Desktop\\GYM_API_REST\\GYM_API_REST\\GYM.Core\\Entities\\Dojo.cs",
               "RelativeToolTip": "..\\GYM.Core\\Entities\\Dojo.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAAABUAAAAAAAAA",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAgwBUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2023-12-17T21:35:53.606Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
+              "Title": "DojoController.cs",
+              "DocumentMoniker": "C:\\Users\\Luketruke\\Desktop\\GYM_API_REST\\GYM_API_REST\\GYM_API\\Controllers\\DojoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DojoController.cs",
+              "ToolTip": "C:\\Users\\Luketruke\\Desktop\\GYM_API_REST\\GYM_API_REST\\GYM_API\\Controllers\\DojoController.cs",
+              "RelativeToolTip": "Controllers\\DojoController.cs",
+              "ViewState": "AQIAADgAAAAAAAAAAAAkwEUAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-17T21:34:07.407Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IDojoService.cs",
+              "DocumentMoniker": "C:\\Users\\Luketruke\\Desktop\\GYM_API_REST\\GYM_API_REST\\GYM.Core\\Interfaces\\IDojoService.cs",
+              "RelativeDocumentMoniker": "..\\GYM.Core\\Interfaces\\IDojoService.cs",
+              "ToolTip": "C:\\Users\\Luketruke\\Desktop\\GYM_API_REST\\GYM_API_REST\\GYM.Core\\Interfaces\\IDojoService.cs",
+              "RelativeToolTip": "..\\GYM.Core\\Interfaces\\IDojoService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAwAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-17T23:58:32.489Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "BaseRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Luketruke\\Desktop\\GYM_API_REST\\GYM_API_REST\\GYM.Infrastructure\\Repositories\\BaseRepository.cs",
+              "RelativeDocumentMoniker": "..\\GYM.Infrastructure\\Repositories\\BaseRepository.cs",
+              "ToolTip": "C:\\Users\\Luketruke\\Desktop\\GYM_API_REST\\GYM_API_REST\\GYM.Infrastructure\\Repositories\\BaseRepository.cs",
+              "RelativeToolTip": "..\\GYM.Infrastructure\\Repositories\\BaseRepository.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAcwBEAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-17T23:59:43.08Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "DojoDto.cs",
               "DocumentMoniker": "C:\\Users\\Luketruke\\Desktop\\GYM_API_REST\\GYM_API_REST\\GYM.Core\\DTOs\\DojoDto.cs",
               "RelativeDocumentMoniker": "..\\GYM.Core\\DTOs\\DojoDto.cs",
               "ToolTip": "C:\\Users\\Luketruke\\Desktop\\GYM_API_REST\\GYM_API_REST\\GYM.Core\\DTOs\\DojoDto.cs",
               "RelativeToolTip": "..\\GYM.Core\\DTOs\\DojoDto.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAzwA8AAAAjAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2023-12-17T21:35:48.076Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "DojoService.cs",
               "DocumentMoniker": "C:\\Users\\Luketruke\\Desktop\\GYM_API_REST\\GYM_API_REST\\GYM.Core\\Services\\DojoService.cs",
               "RelativeDocumentMoniker": "..\\GYM.Core\\Services\\DojoService.cs",
               "ToolTip": "C:\\Users\\Luketruke\\Desktop\\GYM_API_REST\\GYM_API_REST\\GYM.Core\\Services\\DojoService.cs",
               "RelativeToolTip": "..\\GYM.Core\\Services\\DojoService.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAqwBgAAAAIAAAA",
+              "ViewState": "AQIAABAAAAAAAAAAAAAYwB4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2023-12-17T21:35:02.099Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DojoController.cs",
-              "DocumentMoniker": "C:\\Users\\Luketruke\\Desktop\\GYM_API_REST\\GYM_API_REST\\GYM_API\\Controllers\\DojoController.cs",
-              "RelativeDocumentMoniker": "Controllers\\DojoController.cs",
-              "ToolTip": "C:\\Users\\Luketruke\\Desktop\\GYM_API_REST\\GYM_API_REST\\GYM_API\\Controllers\\DojoController.cs",
-              "RelativeToolTip": "Controllers\\DojoController.cs",
-              "ViewState": "AQIAADsAAAAAAAAAAAAgwEUAAAAMAAAA",
+              "DocumentIndex": 10,
+              "Title": "AddressService.cs",
+              "DocumentMoniker": "C:\\Users\\Luketruke\\Desktop\\GYM_API_REST\\GYM_API_REST\\GYM.Core\\Services\\AddressService.cs",
+              "RelativeDocumentMoniker": "..\\GYM.Core\\Services\\AddressService.cs",
+              "ToolTip": "C:\\Users\\Luketruke\\Desktop\\GYM_API_REST\\GYM_API_REST\\GYM.Core\\Services\\AddressService.cs",
+              "RelativeToolTip": "..\\GYM.Core\\Services\\AddressService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2023-12-17T21:34:07.407Z",
+              "WhenOpened": "2023-12-18T00:04:37.941Z",
               "EditorCaption": ""
             }
           ]
