@@ -1,6 +1,6 @@
 ﻿namespace GYM.Core.QueryFilters
 {
-    public class DojoQueryFilter
+    public class FighterQueryFilter
     {
         public string? name { get; set; }
         public string? instructorName { get; set; }

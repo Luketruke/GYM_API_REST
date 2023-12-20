@@ -17,5 +17,9 @@
         // Navigation properties
         public Locality? Locality { get; set; }
         public Province? Province { get; set; }
+
+        ///
+
+        public ICollection<Fighter>? Fighters { get; set; }
     }
 }

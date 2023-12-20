@@ -41,6 +41,7 @@ namespace GYM.Infrastructure.Extensions
             services.AddTransient<ILoginService, LoginService>();
             services.AddTransient<IDojoService, DojoService>();
             services.AddTransient<IAddressService, AddressService>();
+            services.AddTransient<IFighterService, FighterService>();
             services.AddScoped(typeof(IRepository<>), typeof(BaseRepository<>));
             services.AddSingleton<IPasswordService, PasswordService>();
             services.AddSingleton<IUriService>(provider =>

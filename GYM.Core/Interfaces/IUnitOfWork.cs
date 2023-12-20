@@ -8,7 +8,7 @@ namespace GYM.Core.Interfaces
         ILoginRepository LoginRepository { get; }
         IRepository<User> UserRepository { get; }
         IRepository<Event> EventRepository { get; }
-        IRepository<Fighter> FighterRepository { get; }
+        IFighterRepository FighterRepository { get; }
         IRepository<Fight> FightRepository { get; }
         IRepository<Locality> LocalityRepository { get; }
         IRepository<Province> ProvinceRepository { get; }

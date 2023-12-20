@@ -8,7 +8,7 @@ namespace GYM.Core.Entities
         public Fighter Fighter1 { get; set; }
         public Fighter Fighter2 { get; set; }
         public Dojo Dojo { get; set; }
-        public Modality Modality { get; set; }
+        public ModalityEnum Modality { get; set; }
         public string Remarks { get; set; }
         public int EventId { get; set; }
         public int Status { get; set; }

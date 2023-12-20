@@ -11,7 +11,7 @@ namespace GYM.Infrastructure.Repositories
         private readonly ILoginRepository _loginRepository;
         private readonly IRepository<User> _userRepository;
         private readonly IRepository<Event> _eventRepository;
-        private readonly IRepository<Fighter> _fighterRepository;
+        private readonly IFighterRepository _fighterRepository;
         private readonly IRepository<Fight> _fightRepository;
         private readonly IRepository<Province> _provinceRepository;
         private readonly IRepository<Locality> _localityRepository;
@@ -24,7 +24,7 @@ namespace GYM.Infrastructure.Repositories
         public ILoginRepository LoginRepository => _loginRepository ?? new LoginRepository(_context);
         public IRepository<User> UserRepository => _userRepository ?? new BaseRepository<User>(_context);
         public IRepository<Event> EventRepository => _eventRepository ?? new BaseRepository<Event>(_context);
-        public IRepository<Fighter> FighterRepository => _fighterRepository ?? new BaseRepository<Fighter>(_context);
+        public IFighterRepository FighterRepository => _fighterRepository ?? new FighterRepository(_context);
         public IRepository<Fight> FightRepository => _fightRepository ?? new BaseRepository<Fight>(_context);
         public IRepository<Province> ProvinceRepository => _provinceRepository ?? new BaseRepository<Province>(_context);
         public IRepository<Locality> LocalityRepository => _localityRepository ?? new BaseRepository<Locality>(_context);

@@ -14,17 +14,13 @@ public class AutomapperProfile : Profile
     .ForMember(dest => dest.ProvinceName, opt => opt.MapFrom(src => src.Province.Description))
     .ReverseMap();
 
+        CreateMap<Security, SecurityDto>().ReverseMap();
 
-        CreateMap<Security, SecurityDto>();
+        CreateMap<Province, ProvinceDto>().ReverseMap();
 
-        CreateMap<SecurityDto, Security>();
+        CreateMap<Locality, LocalityDto>().ReverseMap();
 
-        CreateMap<Province, ProvinceDto>();
+        CreateMap<FighterDto, Fighter>().ReverseMap();
 
-        CreateMap<ProvinceDto, Province>();
-
-        CreateMap<Locality, LocalityDto>();
-
-        CreateMap<LocalityDto, Locality>();
     }
 }

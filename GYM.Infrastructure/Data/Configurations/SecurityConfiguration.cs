@@ -34,7 +34,7 @@ namespace GYM.Infrastructure.Data.Configurations
                 .IsRequired()
                 .HasConversion(
                     x => x.ToString(),
-                    x => (UserType)Enum.Parse(typeof(UserType), x)
+                    x => (UserTypeEnum)Enum.Parse(typeof(UserTypeEnum), x)
                 );
 
             builder.Property(e => e.DojoId)

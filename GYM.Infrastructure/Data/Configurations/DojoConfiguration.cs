@@ -41,7 +41,6 @@ namespace GYM.Infrastructure.Data.Configurations
                 .HasForeignKey(d => d.LocalityId)
                 .HasConstraintName("FK_Dojo_Locality");
 
-            // Configuración de la relación con Province
             builder.HasOne(d => d.Province)
                 .WithMany(p => p.Dojos)
                 .HasForeignKey(d => d.ProvinceId)

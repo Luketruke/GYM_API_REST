@@ -1,16 +1,16 @@
-﻿using GYM.Core.Interfaces;
+﻿using GYM.Core.DTOs;
+using GYM.Core.Entities;
+using GYM.Core.Enumerators;
+using GYM.Core.Interfaces;
 using GYM.Infrastructure.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace GYM.Infrastructure.Repositories
 {
-    public class FighterRepository : IFighterRepository
+    public class FighterRepository : BaseRepository<Fighter>, IFighterRepository
     {
+        public FighterRepository(GymContext context) : base(context) { }
 
-        private readonly GymContext _context;
-
-        public FighterRepository(GymContext context)
-        {
-            _context = context;
-        }
+        
     }
 }

@@ -4,6 +4,7 @@ namespace GYM.Infrastructure.Interfaces
 {
     public interface IUriService
     {
-        Uri GetDojoPaginationUri(DojoQueryFIlter filter, string actionUrl);
+        Uri GetDojoPaginationUri(DojoQueryFilter filter, string actionUrl);
+        Uri GetFighterPaginationUri(FighterQueryFilter filter, string actionUrl);
     }
 }

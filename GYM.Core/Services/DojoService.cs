@@ -22,22 +22,22 @@ namespace GYM.Core.Services
             return await _unitOfWork.DojoRepository.GetById(id);
         }
 
-        public PagedList<Dojo> GetDojos(DojoQueryFIlter filters)
+        public PagedList<Dojo> GetDojos(DojoQueryFilter filters)
         {
             filters.PageNumber = filters.PageNumber <= 0 ? _paginationOptions.DefaultPageNumber : filters.PageNumber;
             filters.PageSize = filters.PageSize <= 0 ? _paginationOptions.DefaultPageSize : filters.PageSize;
 
             var dojos = _unitOfWork.DojoRepository.GetAllDojos();
 
-            if (!string.IsNullOrEmpty(filters.name))
-            {
-                dojos = dojos.Where(x => x.Name == filters.name);
-            }
+            //if (!string.IsNullOrEmpty(filters.name))
+            //{
+            //    dojos = dojos.Where(x => x.Name == filters.name);
+            //}
 
-            if (!string.IsNullOrEmpty(filters.instructorName))
-            {
-                dojos = dojos.Where(x => x.InstructorName == filters.instructorName);
-            }
+            //if (!string.IsNullOrEmpty(filters.instructorName))
+            //{
+            //    dojos = dojos.Where(x => x.InstructorName == filters.instructorName);
+            //}
 
             var pagedDojos = PagedList<Dojo>.Create(dojos.ToList(), filters.PageNumber, filters.PageSize);
 

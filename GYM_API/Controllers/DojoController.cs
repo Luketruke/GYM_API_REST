@@ -29,14 +29,14 @@ namespace GYM.Api.Controllers
         }
 
         /// <summary>
-        /// Get Dojos
+        /// GetDojos
         /// </summary>
         /// <param name="filters"></param>
         /// <returns></returns>
-        [HttpGet(Name = nameof(GetAll))]
+        [HttpGet(Name = nameof(GetDojos))]
         [ProducesResponseType((int)HttpStatusCode.OK, Type = typeof(ApiResponse<IEnumerable<DojoDto>>))]
         [ProducesResponseType((int)HttpStatusCode.BadRequest)]
-        public IActionResult GetAll([FromQuery] DojoQueryFIlter filters)
+        public IActionResult GetDojos([FromQuery] DojoQueryFilter filters)
         {
             var dojos = _dojoService.GetDojos(filters);
             var dojosDtos = _mapper.Map<IEnumerable<DojoDto>>(dojos);
@@ -49,8 +49,8 @@ namespace GYM.Api.Controllers
                 TotalPages = dojos.TotalPages,
                 HasNextPage = dojos.HasNextPage,
                 HasPreviousPage = dojos.HasPreviousPage,
-                NextPageUrl = _uriService.GetDojoPaginationUri(filters, Url.RouteUrl(nameof(GetAll))).ToString(),
-                PreviousPageUrl = _uriService.GetDojoPaginationUri(filters, Url.RouteUrl(nameof(GetAll))).ToString()
+                NextPageUrl = _uriService.GetDojoPaginationUri(filters, Url.RouteUrl(nameof(GetDojos))).ToString(),
+                PreviousPageUrl = _uriService.GetDojoPaginationUri(filters, Url.RouteUrl(nameof(GetDojos))).ToString()
             };
 
             var response = new ApiResponse<IEnumerable<DojoDto>>(dojosDtos)
@@ -133,8 +133,8 @@ namespace GYM.Api.Controllers
         public async Task<IActionResult> Delete(int id)
         {
             var result = await _dojoService.DeleteDojo(id);
-            //var response = new ApiResponse<bool>(result);
-            return Ok(result);
+            var response = new ApiResponse<bool>(result);
+            return Ok(response);
         }
     }
 }

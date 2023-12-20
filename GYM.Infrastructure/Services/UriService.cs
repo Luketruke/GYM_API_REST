@@ -15,7 +15,13 @@ namespace GYM.Infrastructure.Services
         {
             _baseUri = baseUri;
         }
-        public Uri GetDojoPaginationUri(DojoQueryFIlter filter, string actionUrl)
+        public Uri GetDojoPaginationUri(DojoQueryFilter filter, string actionUrl)
+        {
+            string baseUrl = $"{_baseUri}{actionUrl}";
+            return new Uri(baseUrl);
+        }
+
+        public Uri GetFighterPaginationUri(FighterQueryFilter filter, string actionUrl)
         {
             string baseUrl = $"{_baseUri}{actionUrl}";
             return new Uri(baseUrl);
