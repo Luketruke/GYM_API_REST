@@ -9,7 +9,7 @@ namespace GYM.Core.Interfaces
         Task<bool> DeleteFighter(int id);
         Task<Fighter> GetFighter(int id);
         PagedList<Fighter> GetFighters(FighterQueryFilter filters);
-        Task InsertFighter(Fighter fighter);
+        Task<bool> InsertFighter(Fighter fighter);
         Task UpdateFighter(Fighter fighter);
     }
 }

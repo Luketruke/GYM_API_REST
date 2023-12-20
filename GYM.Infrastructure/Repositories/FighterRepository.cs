@@ -11,6 +11,15 @@ namespace GYM.Infrastructure.Repositories
     {
         public FighterRepository(GymContext context) : base(context) { }
 
-        
+        public IEnumerable<Fighter> GetFighters()
+        {
+            var result = _entities
+                .Include(x => x.Dojo)
+                .Include(x => x.Event)
+                .AsEnumerable()
+                .Where(x => x.Status == 1);
+
+            return result;
+        }
     }
 }

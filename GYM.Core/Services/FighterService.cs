@@ -43,16 +43,17 @@ namespace GYM.Core.Services
 
             return pagedFighters;
         }
-        public async Task InsertFighter(Fighter fighter)
+        public async Task<bool> InsertFighter(Fighter fighter)
         {
             try
             {
                 await _unitOfWork.FighterRepository.Add(fighter);
-                await _unitOfWork.SaveChangesAsync();
+                return await _unitOfWork.SaveChangesAsync() > 0;
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.ToString());
+                return false;
             }
         }
         public async Task UpdateFighter(Fighter fighter)
@@ -74,8 +75,7 @@ namespace GYM.Core.Services
         public async Task<bool> DeleteFighter(int id)
         {
             await _unitOfWork.FighterRepository.LogicalDelete(id);
-            await _unitOfWork.SaveChangesAsync();
-            return true;
+            return await _unitOfWork.SaveChangesAsync() > 0;
         }
     }
 }

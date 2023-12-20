@@ -5,6 +5,6 @@ namespace GYM.Core.Interfaces
     public interface IDojoRepository : IRepository<Dojo>
     {
         Task<IEnumerable<Dojo>> GetDojoByName(string name);
-        IEnumerable<Dojo> GetAllDojos();
+        IEnumerable<Dojo> GetDojos();
     }
 }

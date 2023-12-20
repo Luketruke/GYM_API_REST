@@ -13,6 +13,6 @@ namespace GYM.Core.Interfaces
         IRepository<Locality> LocalityRepository { get; }
         IRepository<Province> ProvinceRepository { get; }
         void SaveChanges();
-        Task SaveChangesAsync();
+        Task<int> SaveChangesAsync();
     }
 }

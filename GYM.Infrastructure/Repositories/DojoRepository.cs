@@ -17,13 +17,13 @@ namespace GYM.Infrastructure.Repositories
 
             return result;
         }
-        public IEnumerable<Dojo> GetAllDojos()
+        public IEnumerable<Dojo> GetDojos()
         {
             var result = _entities
-        .Include(x => x.Locality)
-        .Include(x => x.Province)
-        .AsEnumerable()
-        .Where(x => x.Status == 1);
+                .Include(x => x.Locality)
+                .Include(x => x.Province)
+                .AsEnumerable()
+                .Where(x => x.Status == 1);
 
             return result;
         }

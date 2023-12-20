@@ -42,9 +42,9 @@ namespace GYM.Infrastructure.Repositories
             _context.SaveChanges();
         }
 
-        public async Task SaveChangesAsync()
+        public async Task<int> SaveChangesAsync()
         {
-            await _context.SaveChangesAsync();
+            return await _context.SaveChangesAsync();
         }
     }
 }

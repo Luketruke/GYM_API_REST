@@ -66,9 +66,6 @@ namespace GYM.Infrastructure.Data.Configurations
                 .HasForeignKey(d => d.DojoId)
                 .HasConstraintName("FK_Fighter_Dojo");
 
-            //builder.Property(e => e.EventId)
-            //    .IsRequired();
-
             builder.HasOne(d => d.Event)
                 .WithMany(f => f.Fighters)
                 .HasForeignKey(d => d.EventId)

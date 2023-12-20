@@ -27,7 +27,7 @@ namespace GYM.Core.Services
             filters.PageNumber = filters.PageNumber <= 0 ? _paginationOptions.DefaultPageNumber : filters.PageNumber;
             filters.PageSize = filters.PageSize <= 0 ? _paginationOptions.DefaultPageSize : filters.PageSize;
 
-            var dojos = _unitOfWork.DojoRepository.GetAllDojos();
+            var dojos = _unitOfWork.DojoRepository.GetDojos();
 
             //if (!string.IsNullOrEmpty(filters.name))
             //{

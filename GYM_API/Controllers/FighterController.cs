@@ -89,12 +89,22 @@ namespace GYM.Api.Controllers
         {
             var fighter = _mapper.Map<Fighter>(fighterDto);
 
-            await _fighterService.InsertFighter(fighter);
+            var result = await _fighterService.InsertFighter(fighter);
 
-            fighterDto = _mapper.Map<FighterDto>(fighter);
-            var response = new ApiResponse<FighterDto>(fighterDto);
-
-            return Ok(response);
+            if (result)
+            {
+                fighterDto = _mapper.Map<FighterDto>(fighter);
+                var response = new ApiResponse<FighterDto>(fighterDto);
+                return Ok(response);
+            }
+            else
+            {
+                var errorResponse = new ApiResponse<FighterDto>(new FighterDto
+                {
+                    Remarks = "Error inserting fighter"
+                });
+                return BadRequest(errorResponse);
+            }
         }
 
         /// <summary>
