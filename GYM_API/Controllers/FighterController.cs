@@ -74,9 +74,14 @@ namespace GYM.Api.Controllers
         public async Task<IActionResult> GetById(int id)
         {
             var fighter = await _fighterService.GetFighter(id);
-            var fighterDto = _mapper.Map<FighterDto>(fighter);
-            var response = new ApiResponse<FighterDto>(fighterDto);
-            return Ok(response);
+
+            if (fighter != null)
+            {
+                var fighterDto = _mapper.Map<FighterDto>(fighter);
+                var response = new ApiResponse<FighterDto>(fighterDto);
+                return Ok(response);
+            }
+            else return NotFound();
         }
 
         /// <summary>
@@ -140,9 +145,16 @@ namespace GYM.Api.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
-            var result = await _fighterService.DeleteFighter(id);
-            var response = new ApiResponse<bool>(result);
-            return Ok(response);
+            try
+            {
+                var result = await _fighterService.DeleteFighter(id);
+                var response = new ApiResponse<bool>(result);
+                return Ok(response);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex);
+            }
         }
 
     }

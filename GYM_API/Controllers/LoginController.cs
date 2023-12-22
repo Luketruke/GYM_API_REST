@@ -2,7 +2,7 @@
 using GYM.Api.Responses;
 using GYM.Core.DTOs;
 using GYM.Core.Entities;
-using GYM.Core.Interfaces;
+using GYM.Core.Interfaces.Services;
 using GYM.Infrastructure.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
@@ -34,7 +34,7 @@ namespace GYM.Api.Controllers
         {
             var security = _mapper.Map<Security>(securityDto);
 
-            securityDto.status = 1;
+            securityDto.Status = 1;
 
             security.Password = _passwordService.Hash(security.Password);
             await _loginService.RegisterUser(security);

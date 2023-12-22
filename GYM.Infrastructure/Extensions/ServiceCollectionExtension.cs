@@ -1,5 +1,7 @@
 ﻿using GYM.Core.CustomEntities;
 using GYM.Core.Interfaces;
+using GYM.Core.Interfaces.Repositories;
+using GYM.Core.Interfaces.Services;
 using GYM.Core.Services;
 using GYM.Infrastructure.Data;
 using GYM.Infrastructure.Interfaces;

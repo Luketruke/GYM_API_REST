@@ -1,6 +1,6 @@
 ﻿using GYM.Core.Entities;
 
-namespace GYM.Core.Services
+namespace GYM.Core.Interfaces.Services
 {
     public interface IAddressService
     {

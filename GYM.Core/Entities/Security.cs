@@ -8,7 +8,8 @@ namespace GYM.Core.Entities
         public string? UserName { get; set; }
         public string? Password { get; set; }
         public UserTypeEnum Role { get; set; }
+
+        // Properties for relationships
         public int DojoId { get; set; }
-        public int Status { get; set; }
     }
 }

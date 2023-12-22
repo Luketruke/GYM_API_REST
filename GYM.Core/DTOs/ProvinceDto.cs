@@ -1,8 +1,9 @@
-﻿namespace GYM.Core.DTOs
+﻿using GYM.Core.Entities;
+
+namespace GYM.Core.DTOs
 {
-    public class ProvinceDto
+    public class ProvinceDto : BaseEntity
     {
-        public int Id { get; set; }
-        public string Description { get; set; }
+        public string? Description { get; set; }
     }
 }

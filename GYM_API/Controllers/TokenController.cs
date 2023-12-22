@@ -1,5 +1,5 @@
 ﻿using GYM.Core.Entities;
-using GYM.Core.Interfaces;
+using GYM.Core.Interfaces.Services;
 using GYM.Infrastructure.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;

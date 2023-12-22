@@ -28,20 +28,21 @@ namespace GYM.Infrastructure.Data.Configurations
                 .IsUnicode(false)
                 .IsRequired();
 
+            builder.Property(e => e.DojoId)
+                .IsRequired();
+
+            builder.Property(e => e.Status)
+                .IsRequired();
+
+            //////////////////Enumerators/////////////////
             builder.Property(e => e.Role)
                 .HasMaxLength(25)
                 .IsUnicode(false)
                 .IsRequired()
                 .HasConversion(
                     x => x.ToString(),
-                    x => (UserTypeEnum)Enum.Parse(typeof(UserTypeEnum), x)
-                );
-
-            builder.Property(e => e.DojoId)
-                .IsRequired();
-
-            builder.Property(e => e.Status)
-                .IsRequired();
+                    x => (UserTypeEnum)Enum.Parse(typeof(UserTypeEnum), x));
+            //////////////////////////////////////////////
         }
     }
 }

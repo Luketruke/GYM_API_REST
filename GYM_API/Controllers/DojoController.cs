@@ -5,6 +5,7 @@ using GYM.Core.DTOs;
 using GYM.Core.Entities;
 using GYM.Core.Interfaces;
 using GYM.Core.QueryFilters;
+using GYM.Core.Services;
 using GYM.Infrastructure.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
@@ -76,9 +77,14 @@ namespace GYM.Api.Controllers
         public async Task<IActionResult> GetById(int id)
         {
             var dojo = await _dojoService.GetDojo(id);
-            var dojoDto = _mapper.Map<DojoDto>(dojo);
-            var response = new ApiResponse<DojoDto>(dojoDto);
-            return Ok(response);
+
+            if (dojo != null)
+            {
+                var dojoDto = _mapper.Map<DojoDto>(dojo);
+                var response = new ApiResponse<DojoDto>(dojoDto);
+                return Ok(response);
+            }
+            else return NotFound();
         }
 
         /// <summary>
@@ -91,12 +97,22 @@ namespace GYM.Api.Controllers
         {
             var dojo = _mapper.Map<Dojo>(dojoDto);
 
-            await _dojoService.InsertDojo(dojo);
+            var result = await _dojoService.InsertDojo(dojo);
 
-            dojoDto = _mapper.Map<DojoDto>(dojo);
-            var response = new ApiResponse<DojoDto>(dojoDto);
-
-            return Ok(response);
+            if (result)
+            {
+                dojoDto = _mapper.Map<DojoDto>(dojo);
+                var response = new ApiResponse<DojoDto>(dojoDto);
+                return Ok(response);
+            }
+            else
+            {
+                var errorResponse = new ApiResponse<DojoDto>(new DojoDto
+                {
+                    Remarks = "Error inserting dojo"
+                });
+                return BadRequest(errorResponse);
+            }
         }
 
         /// <summary>

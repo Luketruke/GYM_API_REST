@@ -1,6 +1,7 @@
 ﻿using GYM.Core.CustomEntities;
 using GYM.Core.Entities;
 using GYM.Core.Interfaces;
+using GYM.Core.Interfaces.Repositories;
 using GYM.Core.QueryFilters;
 using Microsoft.Extensions.Options;
 
@@ -28,16 +29,6 @@ namespace GYM.Core.Services
             filters.PageSize = filters.PageSize <= 0 ? _paginationOptions.DefaultPageSize : filters.PageSize;
 
             var fighters = _unitOfWork.FighterRepository.GetFighters();
-
-            //if (!string.IsNullOrEmpty(filters.name))
-            //{
-            //    fighters = fighters.Where(x => x.Name == filters.name);
-            //}
-
-            //if (!string.IsNullOrEmpty(filters.instructorName))
-            //{
-            //    fighters = fighters.Where(x => x.InstructorName == filters.instructorName);
-            //}
 
             var pagedFighters = PagedList<Fighter>.Create(fighters.ToList(), filters.PageNumber, filters.PageSize);
 

@@ -8,7 +8,7 @@ namespace GYM.Core.Interfaces
     {
         PagedList<Dojo> GetDojos(DojoQueryFilter filters);
         Task<Dojo> GetDojo(int id);
-        Task InsertDojo(Dojo dojos);
+        Task<bool> InsertDojo(Dojo dojos);
         Task UpdateDojo(Dojo dojo);
         Task<bool> DeleteDojo(int id);
     }

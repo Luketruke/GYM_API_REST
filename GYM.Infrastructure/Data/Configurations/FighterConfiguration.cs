@@ -2,6 +2,7 @@
 using GYM.Core.Enumerators;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace GYM.Infrastructure.Data.Configurations
 {
@@ -34,48 +35,46 @@ namespace GYM.Infrastructure.Data.Configurations
 
             builder.Property(e => e.Weight).HasColumnType("decimal(18, 2)");
 
-            builder.Property(e => e.Category)
-                 .HasMaxLength(30)
-                 .IsUnicode(false)
-                 .IsRequired()
-                 .HasConversion(
-                     x => x.ToString(),
-                     x => (CategoryEnum)Enum.Parse(typeof(CategoryEnum), x)
-                 );
-
-            builder.Property(e => e.Modality)
-                .HasMaxLength(30)
-                .IsUnicode(false)
-                .IsRequired()
-                .HasConversion(
-                    x => x.ToString(),
-                    x => (ModalityEnum)Enum.Parse(typeof(ModalityEnum), x)
-                );
-
-            builder.Property(e => e.Gender)
-                .HasMaxLength(30)
-                .IsUnicode(false)
-                .IsRequired()
-                .HasConversion(
-                    x => x.ToString(),
-                    x => (GenderEnum)Enum.Parse(typeof(GenderEnum), x)
-                );
-
-            builder.HasOne(d => d.Dojo)
-                .WithMany(f => f.Fighters)
-                .HasForeignKey(d => d.DojoId)
-                .HasConstraintName("FK_Fighter_Dojo");
-
-            builder.HasOne(d => d.Event)
-                .WithMany(f => f.Fighters)
-                .HasForeignKey(d => d.EventId)
-                .HasConstraintName("FK_Fighter_Event");
-
             builder.Property(e => e.Remarks)
                .HasMaxLength(255)
                .IsUnicode(false);
 
             builder.Property(e => e.Status);
+
+            //////////////////Enumerators/////////////////
+            builder.Property(e => e.Category)
+                .HasMaxLength(30)
+                .IsUnicode(false)
+                .IsRequired()
+                .HasConversion(new EnumToStringConverter<CategoryEnum>());
+
+            builder.Property(e => e.Modality)
+                .HasMaxLength(30)
+                .IsUnicode(false)
+                .IsRequired()
+                .HasConversion(new EnumToStringConverter<ModalityEnum>());
+
+            builder.Property(e => e.Gender)
+                .HasMaxLength(30)
+                .IsUnicode(false)
+                .IsRequired()
+                .HasConversion(new EnumToStringConverter<GenderEnum>());
+            //////////////////////////////////////////////
+
+
+            ////One-to-Many Relationship Configuration////
+            builder.HasOne(f => f.Dojo)
+                .WithMany(d => d.Fighters)
+                .HasForeignKey(f => f.DojoId)
+                .HasConstraintName("FK_Fighter_Dojo");
+
+            builder.HasOne(f => f.Event)
+                .WithMany(e => e.Fighters)
+                .HasForeignKey(f => f.EventId)
+                .HasConstraintName("FK_Fighter_Event");
+            //////////////////////////////////////////////
+
+            
         }
     }
 }

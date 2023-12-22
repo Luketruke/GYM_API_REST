@@ -1,9 +1,10 @@
-﻿namespace GYM.Core.DTOs
+﻿using GYM.Core.Entities;
+
+namespace GYM.Core.DTOs
 {
-    public class FightDto
+    public class FightDto : BaseEntity
     {
-        public int FightId { get; set; }
         public int Code { get; set; }
-        public string Remarks { get; set; }
+        public string? Remarks { get; set; }
     }
 }

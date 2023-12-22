@@ -1,6 +1,6 @@
 ﻿using GYM.Core.Entities;
 
-namespace GYM.Core.Interfaces
+namespace GYM.Core.Interfaces.Repositories
 {
     public interface IUnitOfWork : IDisposable
     {

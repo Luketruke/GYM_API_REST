@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GYM.Core.Interfaces
+namespace GYM.Core.Interfaces.Repositories
 {
     public interface IRepository<T> where T : BaseEntity
     {

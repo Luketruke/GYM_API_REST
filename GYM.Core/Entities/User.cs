@@ -9,6 +9,5 @@ namespace GYM.Core.Entities
         public string? Password { get; set; }
         public UserTypeEnum Role { get; set; }
         public Dojo? Dojo { get; set; }
-        public int Status { get; set; }
     }
 }

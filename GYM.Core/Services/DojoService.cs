@@ -1,6 +1,7 @@
 ﻿using GYM.Core.CustomEntities;
 using GYM.Core.Entities;
 using GYM.Core.Interfaces;
+using GYM.Core.Interfaces.Repositories;
 using GYM.Core.QueryFilters;
 using Microsoft.Extensions.Options;
 
@@ -29,6 +30,7 @@ namespace GYM.Core.Services
 
             var dojos = _unitOfWork.DojoRepository.GetDojos();
 
+            //Example of possible filters
             //if (!string.IsNullOrEmpty(filters.name))
             //{
             //    dojos = dojos.Where(x => x.Name == filters.name);
@@ -43,16 +45,17 @@ namespace GYM.Core.Services
 
             return pagedDojos;
         }
-        public async Task InsertDojo(Dojo dojo)
+        public async Task<bool> InsertDojo(Dojo dojo)
         {
             try
             {
                 await _unitOfWork.DojoRepository.Add(dojo);
-                await _unitOfWork.SaveChangesAsync();
+                return await _unitOfWork.SaveChangesAsync() > 0;
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.ToString());   
+                Console.WriteLine(ex.ToString());
+                return false;
             }
         }
         public async Task UpdateDojo(Dojo dojo)

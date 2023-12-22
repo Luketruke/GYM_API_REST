@@ -20,10 +20,14 @@ namespace GYM.Infrastructure.Data.Configurations
             builder.Property(e => e.ProvinceId)
                 .HasColumnName("ProvinceId");
 
+            builder.Property(e => e.Status).IsRequired();
+
+            ////One-to-Many Relationship Configuration////
             builder.HasMany(l => l.Dojos)
                 .WithOne(d => d.Locality)
                 .HasForeignKey(d => d.LocalityId)
                 .HasConstraintName("FK_Dojo_Locality");
+            //////////////////////////////////////////////
         }
     }
 }

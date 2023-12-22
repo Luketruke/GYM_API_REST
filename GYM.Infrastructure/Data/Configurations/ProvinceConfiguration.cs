@@ -17,10 +17,14 @@ namespace GYM.Infrastructure.Data.Configurations
                 .IsUnicode(false)
                 .HasColumnName("Province");
 
+            builder.Property(e => e.Status).IsRequired();
+
+            ////One-to-Many Relationship Configuration////
             builder.HasMany(p => p.Dojos)
                 .WithOne(d => d.Province)
                 .HasForeignKey(d => d.ProvinceId)
                 .HasConstraintName("FK_Dojo_Province");
+            //////////////////////////////////////////////
         }
     }
 }

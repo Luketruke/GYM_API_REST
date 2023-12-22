@@ -1,12 +1,12 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using GYM.Core.Entities;
-using GYM.Core.Interfaces;
 using GYM.Infrastructure.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using GYM.Core.Interfaces.Repositories;
 
 namespace GYM.Infrastructure.Repositories
 {

@@ -1,5 +1,6 @@
 ﻿using GYM.Core.Entities;
-using GYM.Core.Interfaces;
+using GYM.Core.Interfaces.Repositories;
+using GYM.Core.Interfaces.Services;
 
 namespace GYM.Core.Services
 {

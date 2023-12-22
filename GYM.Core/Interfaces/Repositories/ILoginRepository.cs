@@ -1,4 +1,5 @@
 ﻿using GYM.Core.Entities;
+using GYM.Core.Interfaces.Repositories;
 
 namespace GYM.Core.Interfaces
 {

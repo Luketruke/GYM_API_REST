@@ -3,8 +3,8 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using GYM.Core.DTOs;
 using GYM.Core.Entities;
-using GYM.Core.Interfaces;
 using GYM.Infrastructure.Repositories;
+using GYM.Core.Interfaces.Repositories;
 
 namespace GYM.Api.Controllers
 {

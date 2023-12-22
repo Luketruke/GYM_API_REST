@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using GYM.Api.Responses;
 using GYM.Core.DTOs;
-using GYM.Core.Services;
+using GYM.Core.Interfaces.Services;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
 

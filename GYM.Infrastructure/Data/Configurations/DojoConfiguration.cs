@@ -36,6 +36,9 @@ namespace GYM.Infrastructure.Data.Configurations
                 .HasMaxLength(255)
                 .IsUnicode(false);
 
+            builder.Property(e => e.Status);
+
+            ////One-to-Many Relationship Configuration////
             builder.HasOne(d => d.Locality)
                 .WithMany(l => l.Dojos)
                 .HasForeignKey(d => d.LocalityId)
@@ -46,7 +49,11 @@ namespace GYM.Infrastructure.Data.Configurations
                 .HasForeignKey(d => d.ProvinceId)
                 .HasConstraintName("FK_Dojo_Province");
 
-            builder.Property(e => e.Status);
+            builder.HasMany(f => f.Fighters)
+                .WithOne(d => d.Dojo)
+                .HasForeignKey(d => d.DojoId)
+                .HasConstraintName("FK_Fighter_Dojo");
+            //////////////////////////////////////////////
         }
     }
 }

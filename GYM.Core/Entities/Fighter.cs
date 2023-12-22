@@ -15,11 +15,10 @@ namespace GYM.Core.Entities
         public ModalityEnum? Modality { get; set; }
         public CategoryEnum? Category { get; set; }
         public GenderEnum? Gender { get; set; }
-        public int? Status { get; set; }
 
-        // New properties for relationships
-        public int? DojoId { get; set; }
-        public int? EventId { get; set; }
+        // Properties for relationships
+        public int DojoId { get; set; }
+        public int EventId { get; set; }
 
         // Navigation properties
         public Dojo? Dojo { get; set; }     

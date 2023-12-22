@@ -1,12 +1,12 @@
-﻿namespace GYM.Core.DTOs
+﻿using GYM.Core.Entities;
+
+namespace GYM.Core.DTOs
 {
-    public class EventDto
+    public class EventDto : BaseEntity
     {
-        public int EventId { get; set; }
-        public string Description { get; set; }
+        public string? Description { get; set; }
         public DateTime EventDate { get; set; }
-        public string Remarks { get; set; }
-        public string StatusEvent { get; set; }
-        public int StatusEventId { get; set; }
+        public string? Remarks { get; set; }
+        public int EventStatus { get; set; }
     }
 }
