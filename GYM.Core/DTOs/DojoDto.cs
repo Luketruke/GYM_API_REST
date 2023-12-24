@@ -17,5 +17,9 @@ namespace GYM.Core.DTOs
         // Properties for relationships
         public int LocalityId { get; set; }
         public int ProvinceId { get; set; }
+
+        // Navigation property
+        public LocalityDto? Locality { get; set; }
+        public ProvinceDto? Province { get; set; }
     }
 }

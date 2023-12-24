@@ -36,10 +36,12 @@ namespace GYM.Infrastructure.Data.Configurations
             builder.Property(e => e.Weight).HasColumnType("decimal(18, 2)");
 
             builder.Property(e => e.Remarks)
-               .HasMaxLength(255)
-               .IsUnicode(false);
+                .HasMaxLength(255)
+                .IsUnicode(false);
 
-            builder.Property(e => e.Status);
+            builder.Property(e => e.Status)
+                .IsRequired()
+                .HasDefaultValue(1);
 
             //////////////////Enumerators/////////////////
             builder.Property(e => e.Category)
@@ -61,20 +63,20 @@ namespace GYM.Infrastructure.Data.Configurations
                 .HasConversion(new EnumToStringConverter<GenderEnum>());
             //////////////////////////////////////////////
 
-
             ////One-to-Many Relationship Configuration////
             builder.HasOne(f => f.Dojo)
                 .WithMany(d => d.Fighters)
                 .HasForeignKey(f => f.DojoId)
-                .HasConstraintName("FK_Fighter_Dojo");
+                .HasConstraintName("FK_Fighter_Dojo")
+                .OnDelete(DeleteBehavior.Restrict); 
 
             builder.HasOne(f => f.Event)
                 .WithMany(e => e.Fighters)
                 .HasForeignKey(f => f.EventId)
-                .HasConstraintName("FK_Fighter_Event");
-            //////////////////////////////////////////////
+                .HasConstraintName("FK_Fighter_Event")
+                .OnDelete(DeleteBehavior.Restrict); 
 
-            
+            //////////////////////////////////////////////      
         }
     }
 }

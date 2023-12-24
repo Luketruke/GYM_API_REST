@@ -16,21 +16,23 @@ namespace GYM.Infrastructure.Data.Configurations
                     .HasMaxLength(100)
                     .IsUnicode(false);
 
-            builder.Property(e => e.EventDate).HasColumnType("datetime");
+            builder.Property(e => e.EventDate)
+                    .HasColumnType("datetime2")
+                    .HasDefaultValueSql("GETDATE()");
 
             builder.Property(e => e.Remarks)
-                .HasMaxLength(255)
-                .IsUnicode(false);
+                    .HasMaxLength(255)
+                    .IsUnicode(false);
 
-            builder.Property(e => e.EventStatus).IsRequired();
+            builder.Property(e => e.EventStatus);
 
-            builder.Property(e => e.Status).IsRequired();
+            builder.Property(e => e.Status);
 
             ////One-to-Many Relationship Configuration////
-            builder.HasMany(e => e.Fighters)
-                .WithOne(f => f.Event)
-                .HasForeignKey(f => f.EventId)
-                .HasConstraintName("FK_Fighter_Event");
+            builder.HasMany(f => f.Fighters)
+                    .WithOne(e => e.Event)
+                    .HasForeignKey(e => e.EventId)
+                    .HasConstraintName("FK_Fighter_Event");
             //////////////////////////////////////////////
         }
     }

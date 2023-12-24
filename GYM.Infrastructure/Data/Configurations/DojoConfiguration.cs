@@ -36,18 +36,21 @@ namespace GYM.Infrastructure.Data.Configurations
                 .HasMaxLength(255)
                 .IsUnicode(false);
 
-            builder.Property(e => e.Status);
+            builder.Property(e => e.Status)
+                .HasDefaultValue(1);
 
             ////One-to-Many Relationship Configuration////
             builder.HasOne(d => d.Locality)
                 .WithMany(l => l.Dojos)
                 .HasForeignKey(d => d.LocalityId)
-                .HasConstraintName("FK_Dojo_Locality");
+                .HasConstraintName("FK_Dojo_Locality")
+                .OnDelete(DeleteBehavior.SetNull);
 
             builder.HasOne(d => d.Province)
                 .WithMany(p => p.Dojos)
                 .HasForeignKey(d => d.ProvinceId)
-                .HasConstraintName("FK_Dojo_Province");
+                .HasConstraintName("FK_Dojo_Province")
+                .OnDelete(DeleteBehavior.SetNull);
 
             builder.HasMany(f => f.Fighters)
                 .WithOne(d => d.Dojo)

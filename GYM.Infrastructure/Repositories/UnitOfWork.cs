@@ -24,7 +24,6 @@ namespace GYM.Infrastructure.Repositories
             _context = context;
             _fighterRepositoryLogger = fighterRepositoryLogger;
         }
-
         public IDojoRepository DojoRepository => _dojoRepository ?? new DojoRepository(_context);
         public ILoginRepository LoginRepository => _loginRepository ?? new LoginRepository(_context);
         public IRepository<User> UserRepository => _userRepository ?? new BaseRepository<User>(_context);

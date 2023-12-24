@@ -156,6 +156,5 @@ namespace GYM.Api.Controllers
                 return BadRequest(ex);
             }
         }
-
     }
 }

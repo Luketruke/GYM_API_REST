@@ -24,7 +24,6 @@ namespace GYM.Api.Controllers
         /// <summary>
         /// Get All Provinces
         /// </summary>
-        /// <param name="filters"></param>
         /// <returns></returns>
         [HttpGet("getprovinces", Name = nameof(GetProvinces))]
         [ProducesResponseType((int)HttpStatusCode.OK, Type = typeof(ApiResponse<IEnumerable<ProvinceDto>>))]
@@ -41,7 +40,6 @@ namespace GYM.Api.Controllers
         /// <summary>
         /// Get All Localities
         /// </summary>
-        /// <param name="filters"></param>
         /// <returns></returns>
         [HttpGet("getlocalities", Name = nameof(GetLocalities))]
         [ProducesResponseType((int)HttpStatusCode.OK, Type = typeof(ApiResponse<IEnumerable<LocalityDto>>))]

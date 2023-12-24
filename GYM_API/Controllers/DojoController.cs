@@ -5,7 +5,6 @@ using GYM.Core.DTOs;
 using GYM.Core.Entities;
 using GYM.Core.Interfaces;
 using GYM.Core.QueryFilters;
-using GYM.Core.Services;
 using GYM.Infrastructure.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
@@ -66,6 +65,22 @@ namespace GYM.Api.Controllers
             Response.Headers.Add("Access-Control-Expose-Headers", "X-Pagination");
 
             return Ok(response);
+        }
+
+        /// <summary>
+        /// Get Dojos DDL
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet("getdojosddl", Name = nameof(GetDojosDDL))]
+        [ProducesResponseType((int)HttpStatusCode.OK, Type = typeof(ApiResponse<IEnumerable<DojoDto>>))]
+        [ProducesResponseType((int)HttpStatusCode.BadRequest)]
+
+        public ActionResult<IEnumerable<DojoDto>> GetDojosDDL()
+        {
+            var dojos = _dojoService.GetDojosDDL();
+            var dojosDto = _mapper.Map<IEnumerable<DojoDto>>(dojos);
+
+            return Ok(new ApiResponse<IEnumerable<DojoDto>>(dojosDto));
         }
 
         /// <summary>

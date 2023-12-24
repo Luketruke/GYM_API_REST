@@ -7,6 +7,7 @@ namespace GYM.Core.Interfaces
     public interface IDojoService
     {
         PagedList<Dojo> GetDojos(DojoQueryFilter filters);
+        List<Dojo> GetDojosDDL();
         Task<Dojo> GetDojo(int id);
         Task<bool> InsertDojo(Dojo dojos);
         Task UpdateDojo(Dojo dojo);

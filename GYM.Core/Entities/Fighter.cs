@@ -1,4 +1,5 @@
 ﻿using GYM.Core.Enumerators;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace GYM.Core.Entities
 {
@@ -17,11 +18,15 @@ namespace GYM.Core.Entities
         public GenderEnum? Gender { get; set; }
 
         // Properties for relationships
-        public int DojoId { get; set; }
-        public int EventId { get; set; }
+        public int? DojoId { get; set; }
+        public int? EventId { get; set; }
 
         // Navigation properties
-        public Dojo? Dojo { get; set; }     
+        [ForeignKey("DojoId")]
+        public Dojo? Dojo { get; set; }
+
+        [ForeignKey("EventId")]
         public Event? Event { get; set; }
+
     }
 }

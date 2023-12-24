@@ -1,30 +1,31 @@
 ﻿using AutoMapper;
 using GYM.Core.DTOs;
 using GYM.Core.Entities;
-using GYM.Core.Enumerators;
 
 public class AutomapperProfile : Profile
 {
     public AutomapperProfile()
     {
-        CreateMap<Dojo, DojoDto>()
-    .ForMember(dest => dest.ShortAddress, opt => opt.MapFrom(src => src.Address))
-    .ForMember(dest => dest.FullAddress, opt => opt.Ignore())
-    .ForMember(dest => dest.LocalityName, opt => opt.MapFrom(src => src.Locality.Description))
-    .ForMember(dest => dest.ProvinceName, opt => opt.MapFrom(src => src.Province.Description))
-    .ReverseMap();
-
-        CreateMap<Security, SecurityDto>()
-            .ReverseMap();
-
         CreateMap<Province, ProvinceDto>().ReverseMap();
 
         CreateMap<Locality, LocalityDto>().ReverseMap();
 
-        CreateMap<Fighter, FighterDto>()
-    //.ForMember(dest => dest.DojoName, opt => opt.MapFrom(src => src.Dojo.Name))
-    //.ForMember(dest => dest.EventName, opt => opt.MapFrom(src => src.Event.Description))
-    .ReverseMap();
+        CreateMap<Event, EventDto>().ReverseMap();
+        
+        CreateMap<Security, SecurityDto>().ReverseMap();
 
+        CreateMap<Fight, FightDto>().ReverseMap();
+
+        CreateMap<Dojo, DojoDto>()
+             .ForMember(dest => dest.LocalityName, opt => opt.MapFrom(src => src.Locality != null ? src.Locality.Description : null))
+             .ForMember(dest => dest.ProvinceName, opt => opt.MapFrom(src => src.Province != null ? src.Province.Description : null))
+             .ForMember(dest => dest.ShortAddress, opt => opt.MapFrom(src => src.Address))
+             .ForMember(dest => dest.FullAddress, opt => opt.Ignore())
+             .ReverseMap();
+
+        CreateMap<Fighter, FighterDto>()
+             .ForMember(dest => dest.DojoName, opt => opt.MapFrom(src => src.Dojo != null ? src.Dojo.Name : null))
+             .ForMember(dest => dest.EventName, opt => opt.MapFrom(src => src.Event != null ? src.Event.Description : null))
+             .ReverseMap();
     }
 }

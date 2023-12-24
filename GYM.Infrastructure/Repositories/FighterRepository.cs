@@ -1,10 +1,8 @@
-﻿using GYM.Core.DTOs;
-using GYM.Core.Entities;
-using GYM.Core.Enumerators;
+﻿using GYM.Core.Entities;
 using GYM.Core.Interfaces;
 using GYM.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Logging; // Asegúrate de importar este espacio de nombres
+using Microsoft.Extensions.Logging;
 
 namespace GYM.Infrastructure.Repositories
 {
@@ -22,14 +20,10 @@ namespace GYM.Infrastructure.Repositories
             try
             {
                 var result = _entities
-                    .Include(x => x.Dojo)
-                    .Include(x => x.Event)
-                    .AsEnumerable()
-                    .Where(x => x.Status == 1);
-
-                var query = _entities.Where(x => x.Status == 1).Include(x => x.Event);
-                var sql = query.ToQueryString();
-                _logger.LogInformation($"Query: {sql}");
+                       .Include(x => x.Dojo)
+                       .Include(x => x.Event)
+                       .AsEnumerable()
+                       .Where(x => x.Status == 1 && x.Dojo != null && x.Event != null);
 
                 return result;
             }

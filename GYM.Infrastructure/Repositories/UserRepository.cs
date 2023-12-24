@@ -1,15 +1,10 @@
-﻿using GYM.Core.Interfaces;
+﻿using GYM.Core.Entities;
 using GYM.Infrastructure.Data;
 
 namespace GYM.Infrastructure.Repositories
 {
-    public class UserRepository : IUserRepository
+    public class UserRepository : BaseRepository<User>
     {
-        private readonly GymContext _context;
-
-        public UserRepository(GymContext context)
-        {
-            _context = context;
-        }
+        public UserRepository(GymContext context) : base(context) { }
     }
 }

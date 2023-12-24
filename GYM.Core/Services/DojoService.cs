@@ -45,6 +45,19 @@ namespace GYM.Core.Services
 
             return pagedDojos;
         }
+
+        public List<Dojo> GetDojosDDL()
+        {
+            var dojos = _unitOfWork.DojoRepository.GetAll();
+
+            var dojosList = dojos.Select(a => new Dojo
+            {
+                Name = a.Name,
+                Id = a.Id,
+            }).Distinct().ToList();
+
+            return dojosList;
+        }
         public async Task<bool> InsertDojo(Dojo dojo)
         {
             try

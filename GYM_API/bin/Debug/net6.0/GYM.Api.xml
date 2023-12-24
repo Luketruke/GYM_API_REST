@@ -8,14 +8,12 @@
             <summary>
             Get All Provinces
             </summary>
-            <param name="filters"></param>
             <returns></returns>
         </member>
         <member name="M:GYM.Api.Controllers.AddressController.GetLocalities">
             <summary>
             Get All Localities
             </summary>
-            <param name="filters"></param>
             <returns></returns>
         </member>
         <member name="M:GYM.Api.Controllers.AddressController.GetProvinceById(System.Int32)">
@@ -32,11 +30,30 @@
             <param name="id"></param>
             <returns></returns>
         </member>
+        <member name="M:GYM.Api.Controllers.CategoryController.GetCategories">
+            <summary>
+            Get All Categories
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GYM.Api.Controllers.CategoryController.GetCategoryByName(System.String)">
+            <summary>
+            Get Category By Name
+            </summary>
+            <param name="categoryName"></param>
+            <returns></returns>
+        </member>
         <member name="M:GYM.Api.Controllers.DojoController.GetDojos(GYM.Core.QueryFilters.DojoQueryFilter)">
             <summary>
             GetDojos
             </summary>
             <param name="filters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GYM.Api.Controllers.DojoController.GetDojosDDL">
+            <summary>
+            Get Dojos DDL
+            </summary>
             <returns></returns>
         </member>
         <member name="M:GYM.Api.Controllers.DojoController.GetById(System.Int32)">
@@ -64,6 +81,13 @@
         <member name="M:GYM.Api.Controllers.DojoController.Delete(System.Int32)">
             <summary>
             Logical Delete 
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GYM.Api.Controllers.EventController.GetById(System.Int32)">
+            <summary>
+            Get Fighter
             </summary>
             <param name="id"></param>
             <returns></returns>
@@ -104,11 +128,37 @@
             <param name="id"></param>
             <returns></returns>
         </member>
+        <member name="M:GYM.Api.Controllers.GenderController.GetGenders">
+            <summary>
+            Get All Genders
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GYM.Api.Controllers.GenderController.GetGenderByName(System.String)">
+            <summary>
+            Get Gender By Name
+            </summary>
+            <param name="genderName"></param>
+            <returns></returns>
+        </member>
         <member name="M:GYM.Api.Controllers.LoginController.Register(GYM.Core.DTOs.SecurityDto)">
             <summary>
             Register your user
             </summary>
             <param name="securityDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GYM.Api.Controllers.ModalityController.GetModalities">
+            <summary>
+            Get All Modalities
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GYM.Api.Controllers.ModalityController.GetModalityByName(System.String)">
+            <summary>
+            Get Modality By Name
+            </summary>
+            <param name="modalityName"></param>
             <returns></returns>
         </member>
     </members>

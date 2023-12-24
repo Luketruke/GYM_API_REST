@@ -1,10 +1,10 @@
 ﻿using AutoMapper;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+using GYM.Api.Responses;
 using GYM.Core.DTOs;
 using GYM.Core.Entities;
-using GYM.Infrastructure.Repositories;
 using GYM.Core.Interfaces.Repositories;
+using GYM.Core.Interfaces.Services;
+using Microsoft.AspNetCore.Mvc;
 
 namespace GYM.Api.Controllers
 {
@@ -12,12 +12,14 @@ namespace GYM.Api.Controllers
     [ApiController]
     public class EventController : ControllerBase
     {
+        private readonly IEventService _eventService;
         private readonly IRepository<Event> _eventRepository;
         private readonly IMapper _mapper;
-        public EventController(IRepository<Event> eventRepository, IMapper mapper)
+        public EventController(IRepository<Event> eventRepository, IMapper mapper, IEventService eventService)
         {
             _eventRepository = eventRepository;
             _mapper = mapper;
+            _eventService = eventService;
         }
 
         [HttpGet]
@@ -29,12 +31,23 @@ namespace GYM.Api.Controllers
             return Ok(eventsDto);
         }
 
+        /// <summary>
+        /// Get Fighter
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetEvent(int id)
+        public async Task<IActionResult> GetById(int id)
         {
-            var eventt = await _eventRepository.GetById(id);
-            var eventDto = _mapper.Map<IEnumerable<EventDto>>(eventt);
-            return Ok(eventDto);
+            var eventt = await _eventService.GetEvent(id);
+
+            if (eventt != null)
+            {
+                var eventDto = _mapper.Map<EventDto>(eventt);
+                var response = new ApiResponse<EventDto>(eventDto);
+                return Ok(response);
+            }
+            else return NotFound();
         }
 
         [HttpPost]

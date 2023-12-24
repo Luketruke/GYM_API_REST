@@ -38,6 +38,8 @@ namespace GYM.Core.Services
         {
             try
             {
+                fighter.Dojo = null;
+                fighter.Event = null;
                 await _unitOfWork.FighterRepository.Add(fighter);
                 return await _unitOfWork.SaveChangesAsync() > 0;
             }
@@ -47,10 +49,12 @@ namespace GYM.Core.Services
                 return false;
             }
         }
-        public async Task UpdateFighter(Fighter fighter)
+        public async Task<bool> UpdateFighter(Fighter fighter)
         {
+            fighter.Dojo = null;
+            fighter.Event = null;
             _unitOfWork.FighterRepository.Update(fighter);
-            await _unitOfWork.SaveChangesAsync();
+            return await _unitOfWork.SaveChangesAsync() > 0;
         }
 
         //Dynamic update
